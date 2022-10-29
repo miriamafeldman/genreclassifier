@@ -30,8 +30,8 @@ library("pROC")
 
 ```{r message=FALSE, warning=FALSE}
 #Load Training and Test Data
-songs_tr <- read.csv('../songs_train.csv')
-songs_te <- read.csv('../songs_test.csv')
+songs_tr <- read.csv('./songs_train.csv')
+songs_te <- read.csv('./songs_test.csv')
 
 #Audio Features
 songs_tr_sub <- songs_tr[,(colnames(songs_tr) %like% 'audio_')]
